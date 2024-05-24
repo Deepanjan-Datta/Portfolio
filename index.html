@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="website icon" type="png" href="logo (3).png">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p id="logo">D.</p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#my-skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h2>Hi, I'm</h2>
+                <h1><span>Deepanjan Datta.</span></h1>
+                <h2>And I'm a <span class="text"></span></h2>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <h1 class="sub-title">About</h1>
+                </div>
+                <div class="about-col2">
+                    Results-driven professional with strong problem-solving skills. Eager to learn and gain experience while utilizing exceptional interpersonal skills to help achieve business goals. Expertise in analytical and developmental tasks. Seeking a dynamic organization that offers opportunities for career growth to further enhance problem-solving and analytical abilities. A quick learner and adept problem solver, committed to contribute to organizational success.
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Development</span><br>Website Development</li>
+                            <li><span>Software Development</span><br>Software Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Narula Institute of Technology (under MAKAUT)</li>
+                            <li><span>2020</span><br>Ariadaha Kalachand High School (under WBCHSE)</li>
+                            <li><span>2018</span><br>Baranagar Ramkrishna Mission Ashrama High School (under WBBSE)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Development</h2>
+                    <p>Proficient in HTML, CSS, and JavaScript, I demonstrate a comprehensive grasp of HTML tag structures, advanced CSS methodologies like grids, flexbox, and animation, and adept JavaScript skills encompassing asynchronous programming with async/await, promises, and efficient DOM manipulation. Utilizing API fetch, I seamlessly integrate dynamic data into web applications, crafting engaging and interactive user experiences across all my projects.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h2>Software Development</h2>
+                    <p>Being well-versed in Java's error handling, multithreading, object-oriented programming (OOP), frameworks like- SWING, and AWT, skills that I have successfully applied in the development of numerous projects. Additionally, I proficiently utilize MySQL for effective database management in my applications.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="bank.jpeg">
+                    <div class="layer">
+                        <h3>Online Bank Management System</h3>
+                        <p>Developing “Online Bank Management System” using Java, implementing JDBC, MySQL, AWT, and SWING to ensure efficient data management and a user-friendly interface.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="currency.jpeg">
+                    <div class="layer">
+                        <h3>Currency Converter</h3>
+                        <p>Developing a “Currency Converter” using HTML, CSS, and JavaScript, utilizing DOM manipulation, async/await, and API fetch to create dynamic and interactive features for a seamless user experience.</p>
+                    </div>
+                </div>
+                <div class="work" id="img3">
+                    <img src="tic.jpg">
+                    <div class="layer">
+                        <h3>Tic-Tac-Toe Game</h3>
+                        <p>Developing a “Tic-Tac-Toe Game” using HTML, CSS, and JavaScript, including Flexbox for layout along with DOM manipulation and animations to elevate the user experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="my-skills">
+        <div class="container">
+            <h1 class="sub-title" style="margin-bottom: 40px;">Skills</h1>
+            <section>
+                <div class="container1" id="skills">
+                    <h1 class="heading1" style="margin-bottom: 30px;">Technical Skills</h1>
+                    <div class="technical-bars">
+                        <div class="bar">
+                            <i class="fab fa-html5" style="color: #c95d2e;"></i>
+                            <div class="info">
+                                <span style="font-size: 15px;" style="color: #fff;">HTML</span>
+                            </div>
+                            <div class="progress-line html">
+                                <span><span class="percentage" style="font-size: 10px;">60%</span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <i class="fab fa-css3-alt" style="color: #2565ae;"></i>
+                            <div class="info">
+                                <span style="font-size: 15px;" style="color: #fff;">CSS</span>
+                            </div>
+                            <div class="progress-line css">
+                                <span><span class="percentage" style="font-size: 10px;">50%</span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <i class="fab fa-js" style="color: #efd81d;"></i>
+                            <div class="info">
+                                <span style="font-size: 15px;" style="color: #fff;">JavaScript</span>
+                            </div>
+                            <div class="progress-line javascript">
+                                <span><span class="percentage" style="font-size: 10px;">65%</span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <i class="fab fa-java" style="color: #5382a1;"></i>
+                            <div class="info">
+                                <span style="font-size: 15px;" style="color: #fff;">Java</span>
+                            </div>
+                            <div class="progress-line java">
+                                <span><span class="percentage" style="font-size: 10px;">70%</span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <i class="fa-brands fa-python" style="color: rgb(77, 200, 77);"></i>
+                            <div class="info">
+                                <span style="font-size: 15px;" style="color: #fff;">Python</span>
+                            </div>
+                            <div class="progress-line python">
+                                <span><span class="percentage" style="font-size: 10px;">40%</span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <i class="fa-solid fa-database" style="color: #4479a1;"></i>
+                            <div class="info">
+                                <span style="font-size: 15px;" style="color: #fff;">MySQL</span>
+                            </div>
+                            <div class="progress-line mysql">
+                                <span><span class="percentage" style="font-size: 10px;">45%</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container2">
+                    <h1 class="heading2">Professional Skills</h1>
+                    <div class="radial-bars">
+                        <div class="radial-bar">
+                            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                <circle class="background-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                            </svg>
+                            <div class="percentage">70%</div>
+                            <div class="text">Creativity</div>
+                        </div>
+                        <div class="radial-bar">
+                            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                <circle class="background-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                            </svg>
+                            <div class="percentage">80%</div>
+                            <div class="text">Teamwork</div>      
+                        </div>
+                        <div class="radial-bar">
+                            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                <circle class="background-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                            </svg>
+                            <div class="percentage">80%</div>
+                            <div class="text">Problem Solving</div>      
+                        </div>
+                        <div class="radial-bar">
+                            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                <circle class="background-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                            </svg>
+                            <div class="percentage">70%</div>
+                            <div class="text">Communication</div>      
+                        </div> 
+                    </div>
+                </div>                
+            </section>
+        </div>
+    </div>            
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p><i class="fa-solid fa-envelope"></i> dattadipanjan27@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 7044637753</p>
+                    <a href="DeepanjanDatta.docx" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input types="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message" required></textarea>
+                        <button type="submit" id="btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Deepanjan Datta</p>
+            <p>All rights reserved</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
